@@ -4,6 +4,24 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Container from "../components/container"
+
+const ContactSection = () => {
+  return (
+    <section>
+      <Container>
+        <header>
+          <h2>Contact</h2>
+          <p>
+            Feel free to send me an email for a collaboration, or tweet me to
+            say hello!
+          </p>
+        </header>
+      </Container>
+    </section>
+  )
+}
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Argaditya RS - Front End Developer" />
@@ -13,6 +31,8 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+
+    <ContactSection />
   </Layout>
 )
 
