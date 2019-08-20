@@ -1,0 +1,12 @@
+@import "../styles/var";
+
+.copyright {
+  background-color: $color-darkblue;
+  padding: $spacer;
+  text-align: center;
+
+  a {
+    color: $color-orange;
+    background-image: none;
+  }
+}
