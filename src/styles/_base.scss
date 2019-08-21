@@ -39,3 +39,12 @@ h4 {
 header {
   margin-bottom: $spacer;
 }
+.bg-dark {
+  background-color: $color-darkblue;
+  color: $text-invert-color;
+
+  a {
+    color: $color-orange;
+    background-image: none;
+  }
+}
