@@ -1,11 +1,6 @@
 .copyright {
-  background-color: $color-darkblue;
+  @extend .bg-dark;
+
   padding: $spacer;
   text-align: center;
-  color: $text-invert-color;
-
-  a {
-    color: $color-orange;
-    background-image: none;
-  }
 }

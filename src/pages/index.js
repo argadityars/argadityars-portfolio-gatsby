@@ -6,9 +6,11 @@ import SEO from "../components/seo"
 
 import Container from "../components/container"
 
+import styles from "../styles/pages/index.module.scss"
+
 const ContactSection = () => {
   return (
-    <section>
+    <section className={styles.contactSection}>
       <Container>
         <header>
           <h2>Contact</h2>
@@ -17,6 +19,39 @@ const ContactSection = () => {
             say hello!
           </p>
         </header>
+
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/argadityars"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/argadityars"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/argadityars"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="mailto://argadityarss@gmail.com">Email</a>
+          </li>
+        </ul>
       </Container>
     </section>
   )

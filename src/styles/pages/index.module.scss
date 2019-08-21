@@ -1,0 +1,40 @@
+.contact-section {
+  @extend .bg-dark;
+  padding: $spacer * 2 0;
+  border-bottom: 1px solid #333333;
+
+  header {
+    h2 {
+      color: $color-white;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li:not(:last-child) {
+      margin-right: $spacer;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    div:first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    header {
+      margin-bottom: 0;
+    }
+
+    ul {
+      justify-content: flex-end;
+    }
+  }
+}
