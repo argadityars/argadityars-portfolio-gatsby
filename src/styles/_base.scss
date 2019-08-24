@@ -59,3 +59,25 @@ header {
     content: ".";
   }
 }
+@mixin column {
+  padding: 0 $spacer;
+}
+@mixin left-column() {
+  @media (min-width: 768px) {
+    @include column();
+    flex: 5;
+  }
+  @media (min-width: 992px) {
+    flex: 4;
+  }
+}
+@mixin right-column() {
+  @media (min-width: 768px) {
+    @include column();
+    padding-top: 48px;
+    flex: 7;
+  }
+  @media (min-width: 992px) {
+    flex: 8;
+  }
+}

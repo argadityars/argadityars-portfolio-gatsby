@@ -12,7 +12,7 @@ const TechSection = () => {
   return (
     <section className={styles.techSection}>
       <Container>
-        <header>
+        <header className="left">
           <h2>Tech</h2>
           <p>
             As a front end dev, I speak client side programming languages and
@@ -20,7 +20,7 @@ const TechSection = () => {
           </p>
         </header>
 
-        <ul>
+        <ul className="right">
           <li>
             <h3>Tools</h3>
             <ul>
@@ -31,9 +31,8 @@ const TechSection = () => {
           <li>
             <h3>Front-End</h3>
             <ul>
-              <li>React</li>
-              <li>HTML5</li>
-              <li>Javascript</li>
+              <li>React Native</li>
+              <li>Gatsby</li>
               <li>Sass</li>
             </ul>
           </li>
