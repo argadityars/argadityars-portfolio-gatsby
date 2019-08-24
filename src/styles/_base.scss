@@ -48,3 +48,14 @@ header {
     background-image: none;
   }
 }
+.spacer {
+  padding: 8rem 0;
+}
+.underline {
+  background-image: linear-gradient(transparent 78%, $color-orange 10%);
+}
+.fullstop {
+  &::after {
+    content: ".";
+  }
+}
