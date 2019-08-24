@@ -48,15 +48,28 @@ header {
     background-image: none;
   }
 }
-.spacer {
-  padding: 8rem 0;
-}
 .underline {
   background-image: linear-gradient(transparent 78%, $color-orange 10%);
 }
 .fullstop {
   &::after {
     content: ".";
+  }
+}
+.lowercase {
+  text-transform: lowercase;
+}
+@mixin spacer {
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    padding: 4rem 0;
+  }
+}
+@mixin row {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 @mixin column {

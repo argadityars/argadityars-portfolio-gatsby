@@ -3,10 +3,31 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-
 import Container from "../components/container"
+import Card from "../components/card"
 
 import styles from "../styles/pages/index.module.scss"
+
+const ExpSection = () => {
+  return (
+    <section className={styles.expSection}>
+      <Container>
+        <header className="left">
+          <h2>Experience</h2>
+          <p>I'm having awesome collaboration with these startups/companies.</p>
+        </header>
+
+        <ul className="right">
+          <li>
+            <Card>MyPay</Card>
+          </li>
+          <li>Demon</li>
+          <li>MyStore</li>
+        </ul>
+      </Container>
+    </section>
+  )
+}
 
 const TechSection = () => {
   return (
@@ -108,8 +129,8 @@ const IndexPage = () => (
       <Image />
     </div>
 
+    <ExpSection />
     <TechSection />
-
     <ContactSection />
   </Layout>
 )

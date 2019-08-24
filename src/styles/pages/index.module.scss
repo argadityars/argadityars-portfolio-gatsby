@@ -1,5 +1,26 @@
+.exp-section {
+  @include spacer();
+
+  header {
+    @include left-column();
+    h2 {
+      @extend .underline;
+      @extend .fullstop;
+      @extend .lowercase;
+    }
+  }
+
+  div > ul {
+    @include right-column();
+  }
+
+  div:first-child {
+    @include row();
+  }
+}
+
 .tech-section {
-  @extend .spacer;
+  @include spacer();
   background-image: linear-gradient(transparent, $color-lightblue);
 
   header {
@@ -7,6 +28,7 @@
     h2 {
       @extend .underline;
       @extend .fullstop;
+      @extend .lowercase;
     }
   }
 
@@ -27,12 +49,8 @@
     }
   }
 
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    div:first-child {
-      display: flex;
-      flex-direction: row;
-    }
+  div:first-child {
+    @include row();
   }
 }
 
