@@ -8,6 +8,48 @@ import Container from "../components/container"
 
 import styles from "../styles/pages/index.module.scss"
 
+const TechSection = () => {
+  return (
+    <section className={styles.techSection}>
+      <Container>
+        <header>
+          <h2>Tech</h2>
+          <p>
+            As a front end dev, I speak client side programming languages and
+            equip myself with some build tools.
+          </p>
+        </header>
+
+        <ul>
+          <li>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>Parcel</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Front-End</h3>
+            <ul>
+              <li>React</li>
+              <li>HTML5</li>
+              <li>Javascript</li>
+              <li>Sass</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Design</h3>
+            <ul>
+              <li>Adobe XD</li>
+              <li>Zeplin</li>
+            </ul>
+          </li>
+        </ul>
+      </Container>
+    </section>
+  )
+}
+
 const ContactSection = () => {
   return (
     <section className={styles.contactSection}>
@@ -66,6 +108,8 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+
+    <TechSection />
 
     <ContactSection />
   </Layout>
